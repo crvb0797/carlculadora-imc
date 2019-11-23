@@ -55,7 +55,12 @@ body{
     border-bottom: 3px solid #3498db;
     color: whitesmoke;
     outline: 0;
+   
 
+}
+
+.calc form label{
+     font-weight: bold;
 }
 
 .calc form button {
@@ -64,6 +69,12 @@ body{
     text-transform: uppercase;
     padding: 1em;
     border-radius: 20px;
+     transition: .20s ease;
+    
+}
+
+.calc form button:hover{
+     background: #2ecc71;
 }
 
 .info{
