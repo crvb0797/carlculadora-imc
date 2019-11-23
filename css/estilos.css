@@ -32,6 +32,10 @@ body{
     border-radius: 10px;
 }
 
+.calc h4 {
+    padding: 0;
+}
+
 .calc{
     background-color: #888888;
     border-radius: 10px;
@@ -39,7 +43,7 @@ body{
 
 .calc form{
     margin: 0;
-    padding: 1em;
+    padding: .5em 1em;
 }
 
 .calc form button,
@@ -65,13 +69,14 @@ body{
 .info{
     background-color: #1f1f1f;
     border-radius: 10px;
+    padding: 1em;
 }
 
 .info h4,
 .info ul,
 .info p {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .info ul{
@@ -88,4 +93,51 @@ body{
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
+
+    h4 {
+        font-size: 30px;
+    }
+}
+
+
+
+/* ICONOS */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?4dmvx1');
+    src: url('../fonts/icomoon.eot?4dmvx1#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?4dmvx1') format('truetype'),
+        url('../fonts/icomoon.woff?4dmvx1') format('woff'),
+        url('../fonts/icomoon.svg?4dmvx1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-mail:before {
+    content: "\e945";
+}
+
+.icon-location:before {
+    content: "\e947";
 }
