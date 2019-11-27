@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <!-- FONT AWESON -->
-    <script src="https://kit.fontawesome.com/e311b0bf17.js" crossorigin="anonymous"></script>
     <title>carlculadora IMC</title>
 </head>
 <body>
@@ -21,22 +19,22 @@
         <div class="calc-wrapper">
             <div class="calc">
                 <h4>Calcula tu IMC</h4>
-                <form action="">
+                <form action="" id="app" name="app">
                 <p>
                     <label>Tu peso:</label>
-                    <input type="text" placeholder="En kilogramos">
+                    <input type="text" placeholder="En kilogramos" id="peso"> 
                 </p>
                 <p>
                     <label>Tu altura:</label>
-                    <input type="text" placeholder="En metros">
+                    <input type="text" placeholder="En metros" id="altura">
                 </p>
                 <p>
                     <label>Tu IMC es:</label>
-                    <input type="text">
+                    <input type="text" id="imcTotal" readonly>
                 </p>
 
                 <p>
-                    <button>Calcular</button>
+                    <button type="button" id="btn-calcular">Calcular</button>
                 </p>
                 </form>
             </div>
@@ -55,5 +53,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Hojas de JavaScript -->
+    <script src="js/app.js"></script>
 </body>
 </html>
